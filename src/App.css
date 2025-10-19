@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+  font-family:"Roboto Condensed", sans-serif;
+}
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 350px;
+  padding: 20px;
+  background-color: #fff;
+
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, .5);
+
+}
+.input-container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+  border: 2px solid rgb(109, 199, 229);
+  border-radius: 20px;
+
+  overflow: hidden; /* If content gone out*/
+
+  margin-bottom: 10px;
+}
+.cityInput{
+  flex: 1; /* Take maximum available space*/
+
+  border: none;
+  height: 24px;
+  padding: 12px;
+  outline: none; /* on select*/
+
+  font-size: 22px;
+}
+.search-icon{
+  padding: 8px;
+  height: 28px;
+
+  cursor: pointer; /*mouse hoover become pointer*/
+
+}
+.search-icon img{
+  /* object-fit: contain; */
+  margin-bottom: 1px;
+}
+
+.image{
+  height: 150px;
+
+  text-align: center;
+  margin-bottom: 32px;
+  
+  
+}
+.image img{
+  width: 160px;
+  height: 160px;
+  padding: 10PX;
+}
+
+.temp,
+.city,
+.country{
+  font-size: 35px;
+  text-align: center;
+  font-weight: 400;
+  color: #333;
+  text-transform: uppercase;
+
+  margin-top:5px;
+}
+.temp{
+  font-weight: 500;
+}
+.city{
+  color: #ffbc00;
+}
+.country{
+  color: rgb(1, 178, 247);
+  font-size: 22px;
+}
+
+.coordinates{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 10px;
+  text-align: center;
+}
+.coordinates div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.coordinates div span{
+  font-size: 18px;
+}
+.coordinates div span:nth-child(2),
+.percentage{
+  font-size: 22px;
+  font-weight: bold;
+  color: #666;
+  padding-top:5px ;
+}
+
+.data-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.data-container div{
+  text-align: center;
+}
+.icon{
+  width: 80px;
+  height: 80px;
+}
+.text{
+  color: #888;
+  font-size: 18px;
+}
+p {
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+
+  margin-top: 22px;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+}
+
+.city-not-found,
+.loading-message,
+.error-message{
+  margin-top: 10px;
+  color:#666;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+}
+
+p span{
+  font-family: cursive;
+  font-size: 14px;
+}
+
